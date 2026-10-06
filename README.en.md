@@ -1,5 +1,7 @@
 # Alpha Preflight
 
+[Download the standalone Skill](packages/alpha-preflight-v1.0.0.zip)
+
 Look at the edges before you deliver the asset.
 
 Inspect actual image transparency, compare a cutout on different backgrounds, and produce an offline review report. Use the CLI directly or install the Codex skill. Processing is local; Python and Pillow are the only runtime requirements.

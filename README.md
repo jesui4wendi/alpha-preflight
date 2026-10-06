@@ -1,5 +1,7 @@
 # Alpha Preflight
 
+[下载 Skill 安装包](packages/alpha-preflight-v1.0.0.zip)
+
 透明素材交付前，先看看边缘。
 
 检查贴纸、图标和切图是否真的透明，把它们放到深浅背景上对比，再导出一份离线报告。可以独立运行，也可以作为 Codex Skill 使用。核心处理在本地完成，只依赖 Python 和 Pillow。
