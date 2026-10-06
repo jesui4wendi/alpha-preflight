@@ -1,0 +1,11 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+report/
+report-*/
+new-samples/
+new-demo/
+dist/

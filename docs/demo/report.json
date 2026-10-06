@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "tool": "alpha-preflight",
+  "tool_version": "1.0.0",
+  "summary": {
+    "total": 6,
+    "no_flags": 1,
+    "review": 5,
+    "error": 0
+  },
+  "files": [
+    {
+      "label": "assets/01-clean-alpha.png",
+      "status": "no_flags",
+      "diagnostics": [],
+      "sha256": "ef73d18b8b481d220d821a376cca255b68fc3ca01772212bdc1bd785b9aa9f13",
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "width": 256,
+      "height": 256,
+      "preview_colour": "assumed_srgb",
+      "alpha": {
+        "state": "transparent",
+        "encoded_alpha_or_transparency": true,
+        "pixel_count": 65536,
+        "transparent_pixels": 40615,
+        "semitransparent_pixels": 1900,
+        "opaque_pixels": 23021,
+        "transparent_percent": 61.9736,
+        "semitransparent_percent": 2.8992,
+        "visible_bbox": [
+          45,
+          45,
+          211,
+          211
+        ],
+        "margins_px": {
+          "left": 45,
+          "top": 45,
+          "right": 45,
+          "bottom": 45
+        },
+        "touches_canvas": []
+      },
+      "edge": {
+        "soft_boundary_pixels": 569,
+        "light_neutral_pixels": 0,
+        "dark_neutral_pixels": 0,
+        "review_candidates": [],
+        "definition": "One-pixel visible boundary, alpha 17–239; light RGB >=245, dark RGB <=10."
+      },
+      "checkerboard": {
+        "tested": false,
+        "matched_corners": [],
+        "candidate_tile_sizes_px": []
+      },
+      "zoom_region": [
+        58,
+        15,
+        122,
+        79
+      ]
+    },
+    {
+      "label": "assets/02-opaque-with-alpha-channel.png",
+      "status": "review",
+      "diagnostics": [
+        {
+          "code": "no_transparent_pixels",
+          "kind": "fact",
+          "message": "No pixel is transparent, even if the file contains an alpha channel."
+        },
+        {
+          "code": "canvas_contact",
+          "kind": "fact",
+          "message": "Visible content touches the canvas: left, top, right, bottom. This may be intentional."
+        }
+      ],
+      "sha256": "d4a9055c884bbc471d7efe1633e429adf384944b0820af75c00663e2a03c8729",
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "width": 256,
+      "height": 256,
+      "preview_colour": "assumed_srgb",
+      "alpha": {
+        "state": "opaque",
+        "encoded_alpha_or_transparency": true,
+        "pixel_count": 65536,
+        "transparent_pixels": 0,
+        "semitransparent_pixels": 0,
+        "opaque_pixels": 65536,
+        "transparent_percent": 0.0,
+        "semitransparent_percent": 0.0,
+        "visible_bbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "margins_px": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "touches_canvas": [
+          "left",
+          "top",
+          "right",
+          "bottom"
+        ]
+      },
+      "edge": {
+        "soft_boundary_pixels": 0,
+        "light_neutral_pixels": 0,
+        "dark_neutral_pixels": 0,
+        "review_candidates": [],
+        "definition": "One-pixel visible boundary, alpha 17–239; light RGB >=245, dark RGB <=10."
+      },
+      "checkerboard": {
+        "tested": true,
+        "matched_corners": [],
+        "candidate_tile_sizes_px": []
+      },
+      "zoom_region": [
+        96,
+        96,
+        160,
+        160
+      ]
+    },
+    {
+      "label": "assets/03-painted-grid.png",
+      "status": "review",
+      "diagnostics": [
+        {
+          "code": "no_transparent_pixels",
+          "kind": "fact",
+          "message": "No pixel is transparent, even if the file contains an alpha channel."
+        },
+        {
+          "code": "canvas_contact",
+          "kind": "fact",
+          "message": "Visible content touches the canvas: left, top, right, bottom. This may be intentional."
+        },
+        {
+          "code": "checkerboard_like_border",
+          "kind": "hint",
+          "message": "At least two opaque corners contain a repeating grayscale grid. This may be a painted transparency preview or an intentional pattern."
+        }
+      ],
+      "sha256": "4e48c5baa94e8e4beb6f117c34c738de56a55250e2190d451fa900d2b1b99b0e",
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "width": 256,
+      "height": 256,
+      "preview_colour": "assumed_srgb",
+      "alpha": {
+        "state": "opaque",
+        "encoded_alpha_or_transparency": true,
+        "pixel_count": 65536,
+        "transparent_pixels": 0,
+        "semitransparent_pixels": 0,
+        "opaque_pixels": 65536,
+        "transparent_percent": 0.0,
+        "semitransparent_percent": 0.0,
+        "visible_bbox": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "margins_px": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "touches_canvas": [
+          "left",
+          "top",
+          "right",
+          "bottom"
+        ]
+      },
+      "edge": {
+        "soft_boundary_pixels": 0,
+        "light_neutral_pixels": 0,
+        "dark_neutral_pixels": 0,
+        "review_candidates": [],
+        "definition": "One-pixel visible boundary, alpha 17–239; light RGB >=245, dark RGB <=10."
+      },
+      "checkerboard": {
+        "tested": true,
+        "matched_corners": [
+          "top_left",
+          "top_right",
+          "bottom_left",
+          "bottom_right"
+        ],
+        "candidate_tile_sizes_px": [
+          8
+        ]
+      },
+      "zoom_region": [
+        96,
+        96,
+        160,
+        160
+      ]
+    },
+    {
+      "label": "assets/04-light-soft-edge.png",
+      "status": "review",
+      "diagnostics": [
+        {
+          "code": "light_soft_edge",
+          "kind": "hint",
+          "message": "Light neutral pixels occur along the soft boundary. Check them on opposite backgrounds; intentional outlines can produce the same hint."
+        }
+      ],
+      "sha256": "53d94076bff8a82355e4e51a32a3447c0821290e036ec2ed4384946481cef6a7",
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "width": 256,
+      "height": 256,
+      "preview_colour": "assumed_srgb",
+      "alpha": {
+        "state": "transparent",
+        "encoded_alpha_or_transparency": true,
+        "pixel_count": 65536,
+        "transparent_pixels": 40615,
+        "semitransparent_pixels": 1900,
+        "opaque_pixels": 23021,
+        "transparent_percent": 61.9736,
+        "semitransparent_percent": 2.8992,
+        "visible_bbox": [
+          45,
+          45,
+          211,
+          211
+        ],
+        "margins_px": {
+          "left": 45,
+          "top": 45,
+          "right": 45,
+          "bottom": 45
+        },
+        "touches_canvas": []
+      },
+      "edge": {
+        "soft_boundary_pixels": 569,
+        "light_neutral_pixels": 569,
+        "dark_neutral_pixels": 0,
+        "review_candidates": [
+          "light"
+        ],
+        "definition": "One-pixel visible boundary, alpha 17–239; light RGB >=245, dark RGB <=10."
+      },
+      "checkerboard": {
+        "tested": false,
+        "matched_corners": [],
+        "candidate_tile_sizes_px": []
+      },
+      "zoom_region": [
+        58,
+        15,
+        122,
+        79
+      ]
+    },
+    {
+      "label": "assets/05-canvas-contact.png",
+      "status": "review",
+      "diagnostics": [
+        {
+          "code": "canvas_contact",
+          "kind": "fact",
+          "message": "Visible content touches the canvas: left. This may be intentional."
+        }
+      ],
+      "sha256": "4b47064de228038f287113d66512acf0017472fb66571660061e8441898f6f7b",
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "width": 256,
+      "height": 256,
+      "preview_colour": "assumed_srgb",
+      "alpha": {
+        "state": "transparent",
+        "encoded_alpha_or_transparency": true,
+        "pixel_count": 65536,
+        "transparent_pixels": 41573,
+        "semitransparent_pixels": 1438,
+        "opaque_pixels": 22525,
+        "transparent_percent": 63.4354,
+        "semitransparent_percent": 2.1942,
+        "visible_bbox": [
+          0,
+          45,
+          156,
+          211
+        ],
+        "margins_px": {
+          "left": 0,
+          "top": 45,
+          "right": 100,
+          "bottom": 45
+        },
+        "touches_canvas": [
+          "left"
+        ]
+      },
+      "edge": {
+        "soft_boundary_pixels": 447,
+        "light_neutral_pixels": 0,
+        "dark_neutral_pixels": 0,
+        "review_candidates": [],
+        "definition": "One-pixel visible boundary, alpha 17–239; light RGB >=245, dark RGB <=10."
+      },
+      "checkerboard": {
+        "tested": false,
+        "matched_corners": [],
+        "candidate_tile_sizes_px": []
+      },
+      "zoom_region": [
+        3,
+        15,
+        67,
+        79
+      ]
+    },
+    {
+      "label": "assets/06-empty-alpha.png",
+      "status": "review",
+      "diagnostics": [
+        {
+          "code": "empty_image",
+          "kind": "fact",
+          "message": "Every pixel is fully transparent; there is no visible content."
+        }
+      ],
+      "sha256": "aebc86755d7beb8b01bcd992ab44e1133afcb473511b7832eb82228be275473f",
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "width": 256,
+      "height": 256,
+      "preview_colour": "assumed_srgb",
+      "alpha": {
+        "state": "empty",
+        "encoded_alpha_or_transparency": true,
+        "pixel_count": 65536,
+        "transparent_pixels": 65536,
+        "semitransparent_pixels": 0,
+        "opaque_pixels": 0,
+        "transparent_percent": 100.0,
+        "semitransparent_percent": 0.0,
+        "visible_bbox": null,
+        "margins_px": null,
+        "touches_canvas": []
+      },
+      "edge": {
+        "soft_boundary_pixels": 0,
+        "light_neutral_pixels": 0,
+        "dark_neutral_pixels": 0,
+        "review_candidates": [],
+        "definition": "One-pixel visible boundary, alpha 17–239; light RGB >=245, dark RGB <=10."
+      },
+      "checkerboard": {
+        "tested": false,
+        "matched_corners": [],
+        "candidate_tile_sizes_px": []
+      },
+      "zoom_region": [
+        96,
+        96,
+        160,
+        160
+      ]
+    }
+  ]
+}

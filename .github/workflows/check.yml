@@ -1,0 +1,23 @@
+name: Check
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  inspection:
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r skills/alpha-preflight/requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python examples/make_samples.py ci-samples
+      - run: python skills/alpha-preflight/scripts/inspect_alpha.py ci-samples --out ci-report

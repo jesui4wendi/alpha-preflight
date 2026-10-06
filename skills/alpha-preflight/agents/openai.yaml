@@ -1,0 +1,6 @@
+interface:
+  display_name: "Alpha Preflight"
+  short_description: "Inspect transparency and edges before sharing assets"
+  default_prompt: "Use $alpha-preflight to inspect these image assets and give me an offline transparency report with light and dark background previews."
+policy:
+  allow_implicit_invocation: true
